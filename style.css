@@ -1,0 +1,189 @@
+/*Cores monocromáticas
+#FF7879
+#EAB4B4
+#E66C6C
+#664F4F
+#C45C5C
+*/
+
+body {
+	background: #FEFEFE;
+}
+
+.logo-nav {
+	position: relative;
+	width: 100%;
+	margin: 10px auto;
+}
+
+.logo-nav-nome {
+	padding: 20px 0 10px 70px;
+}
+
+.logo-nav h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	display: inline-block;
+}
+
+.logo-nav h2 {
+	font-size: 16px;
+	font-family: 'Cousine', monospace;
+}
+
+nav {
+	text-transform: lowercase;
+	position: absolute;
+	top: 55px;
+	right: 90px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	font-family: 'Cousine', monospace;
+	text-decoration: none;
+	font-size: 22px;
+	padding-left: 15px;
+	color: #FF7879;
+}
+
+nav a:hover {
+	color: #C45C5C;
+}
+
+.icons-redes-sociais {
+	position: absolute;
+	top: 95px;
+	right: 265px;
+	transform: scale(1.8);
+}
+
+.fa-brands {
+	padding-right: 5px;
+	color: #FF7879;
+}
+
+.fa-brands:hover {
+	opacity: 0.7;
+	transform: scale(1.2);
+}
+
+.fa-brands:visited {
+	color: #FF7879;
+}
+
+/* CSS da Página Inicial --------------------------------------------------------------------------------------------------------------- */
+
+.main-descricao-foto {
+	width: 76%;
+	margin: 20px auto;
+	position: relative;
+}
+
+.foto-perfil {
+	width: 600px;
+	margin: 20px 0 40px 35px;
+	border-radius: 50px;
+	float: right;
+}
+
+.main-descricao-foto strong {
+	font-weight: bold;
+}
+
+.main-descricao-foto em {
+	font-style: italic;
+}
+
+.main-descricao-foto-texto {
+	display: block;
+	top: 10px;
+	left: 10px;
+	padding-top: 3em;
+	font-size: 20.5px;
+	text-align: justify;
+}
+
+.main-descricao-foto-texto p {
+	padding-bottom: 0.7em;
+}
+
+.introducao-sobre {
+	line-height: 1.2em;
+}
+
+/*footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}*/
+/* VOLTAR NO FOOTER, ARRUMAR*/
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+.copyright {
+	font-size: 15px;
+	clear: right;
+}
+
+/* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
+
+form {
+	width: 50%;
+	margin: 40px auto;
+	font-size: 18px;
+	border: 1px solid #FF7879;
+}
+
+.form-intro-text {
+	width: 73%;
+	margin: 30px 0 20px 60px;
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+form label {
+	display: block;
+	margin-left: 60px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 8px auto;
+	padding: 8px 10px;
+	width: 70%;
+}
+
+.form-required {
+	color: #FF7879;
+}
+
+.enviar {
+	width: 30%;
+	margin: 0 0 30px 60px;
+	padding: 10px 0;
+	background: #FF7879;
+	color: #FEFEFE;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: 1s transform;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #C45C5C;
+	transform: scale(1.01);
+}
