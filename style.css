@@ -7,7 +7,8 @@
 */
 
 body {
-	background: #FEFEFE;
+	background: #F4F4F4;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .logo-nav {
@@ -103,8 +104,7 @@ nav a:hover {
 	top: 10px;
 	left: 10px;
 	padding-top: 3em;
-	font-size: 20.5px;
-	text-align: justify;
+	font-size: 18px;
 }
 
 .main-descricao-foto-texto p {
@@ -112,6 +112,7 @@ nav a:hover {
 }
 
 .introducao-sobre {
+	text-align: justify;
 	line-height: 1.2em;
 }
 
@@ -133,13 +134,14 @@ footer {
 }
 
 .copyright {
-	font-size: 15px;
+	font-size: 13px;
 	clear: right;
 }
 
 /* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
 
 form {
+	background: #FFFFFF;
 	padding: 1px;
 	width: 50%;
 	margin: 40px auto;
