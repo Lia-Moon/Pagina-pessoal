@@ -126,7 +126,7 @@ nav a:hover {
 	font-size: 13px;
 	margin: 20px 0 0;
 }*/
-/* VOLTAR NO FOOTER, ARRUMAR*/
+/* VOLTAR NO FOOTER, ARRUMAR O ESPAÇAMENTO*/
 footer {
 	text-align: center;
 	padding: 20px;
@@ -140,22 +140,25 @@ footer {
 /* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
 
 form {
+	padding: 1px;
 	width: 50%;
 	margin: 40px auto;
 	font-size: 18px;
-	border: 1px solid #FF7879;
+	border: 2px solid #FF7879;
 }
 
 .form-intro-text {
 	width: 73%;
-	margin: 30px 0 20px 60px;
+	margin: 30px auto;
 	text-align: justify;
 	line-height: 1.3em;
 }
 
 form label {
 	display: block;
-	margin-left: 60px;
+	text-align: left;
+	margin: 0 auto;
+	width: 73%
 }
 
 .input-padrao {
@@ -169,10 +172,13 @@ form label {
 	color: #FF7879;
 }
 
+/* Voltar ao botão SUBMIT para verificar se há a possibilidade de deixar sempre no meio*/
 .enviar {
-	width: 30%;
-	margin: 0 0 30px 60px;
+	position: relative;
+	width: 150px;
+	margin: 20px 0;
 	padding: 10px 0;
+	left: 40%;
 	background: #FF7879;
 	color: #FEFEFE;
 	border: none;
