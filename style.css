@@ -15,21 +15,29 @@ body {
 	position: relative;
 	width: 100%;
 	margin: 10px auto;
+	letter-spacing: -2.2px;
 }
 
 .logo-nav-nome {
 	padding: 20px 0 10px 70px;
 }
 
-.logo-nav h1 {
+.logo-nav span {
 	font-family: 'Dancing Script', cursive;
 	font-size: 80px;
 	display: inline-block;
+	transition: 0.5s;
 }
 
-.logo-nav h2 {
+.logo-nav span:hover {
+	transition: 0.2s;
+	color: #FF7879;
+}
+
+.logo-nav h1 {
 	font-size: 16px;
 	font-family: 'Cousine', monospace;
+	letter-spacing: 0px;
 }
 
 nav {
@@ -37,6 +45,7 @@ nav {
 	position: absolute;
 	top: 55px;
 	right: 90px;
+	letter-spacing: 0px;
 }
 
 nav li {
