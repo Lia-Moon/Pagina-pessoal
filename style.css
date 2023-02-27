@@ -125,6 +125,20 @@ nav a:hover {
 	line-height: 1.2em;
 }
 
+.titulo-cursos-projetos {
+	width: 78%;
+	margin: 50px auto;
+	clear: right;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	border: 2px solid red;
+}
+
+.titulo-cursos-projetos h1, h2 {
+	padding-bottom: 1em;
+}
+
 /*footer {
 	text-align: center;
 	background: url("bg.jpg");
