@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "../Alura/Curso_em_html/HTML5-CSS3"
+		},
+		{
+			"path": "../../Alura/Curso_em_html/HTML5-CSS3"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Pagina-pessoal"
+	}
 }
