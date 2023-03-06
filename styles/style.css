@@ -12,9 +12,9 @@
 	--cor-secundaria: ;
 	--cor-hover: #C45C5C;
 
-	--fonte-primaria: 'Montserrat', sans-serif;
-	--fonte-secundaria: 'Cousine', monospace;
-	--fonte-terciaria: 'Dancing Script', cursive;
+	--fonte-primaria: 'Montserrat', sans-serif; /*fonte usada no corpo do texto*/
+	--fonte-secundaria: 'Cousine', monospace; /*fonte usada no menu*/
+	--fonte-terciaria: 'Dancing Script', cursive; /*fonte usada no título*/
 }
 
 body {
