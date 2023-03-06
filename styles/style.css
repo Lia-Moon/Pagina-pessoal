@@ -6,9 +6,20 @@
 #C45C5C
 */
 
+:root {
+	--cor-fundo-pagina: #F4F4F4;
+	--cor-primaria: #FF7879;
+	--cor-secundaria: ;
+	--cor-hover: #C45C5C;
+
+	--fonte-primaria: 'Montserrat', sans-serif;
+	--fonte-secundaria: 'Cousine', monospace;
+	--fonte-terciaria: 'Dancing Script', cursive;
+}
+
 body {
-	background: #F4F4F4;
-	font-family: 'Montserrat', sans-serif;
+	background: var(--cor-fundo-pagina);
+	font-family: var(--fonte-primaria);
 }
 
 .logo-nav {
@@ -23,7 +34,7 @@ body {
 }
 
 .logo-nav span {
-	font-family: 'Dancing Script', cursive;
+	font-family: var(--fonte-terciaria);
 	font-size: 80px;
 	display: inline-block;
 	transition: 0.5s;
@@ -31,12 +42,12 @@ body {
 
 .logo-nav span:hover {
 	transition: 0.2s;
-	color: #FF7879;
+	color: var(--cor-primaria);
 }
 
 .logo-nav h1 {
 	font-size: 16px;
-	font-family: 'Cousine', monospace;
+	font-family: var(--fonte-secundaria);
 	letter-spacing: 0px;
 }
 
@@ -53,15 +64,15 @@ nav li {
 }
 
 nav a {
-	font-family: 'Cousine', monospace;
+	font-family: var(--fonte-secundaria);
 	text-decoration: none;
 	font-size: 22px;
 	padding-left: 15px;
-	color: #FF7879;
+	color: var(--cor-primaria);
 }
 
 nav a:hover {
-	color: #C45C5C;
+	color: var(--cor-hover);
 }
 
 .icons-redes-sociais {
@@ -73,7 +84,7 @@ nav a:hover {
 
 .fa-brands {
 	padding-right: 5px;
-	color: #FF7879;
+	color: var(--cor-primaria);
 }
 
 .fa-brands:hover {
@@ -82,7 +93,7 @@ nav a:hover {
 }
 
 .fa-brands:visited {
-	color: #FF7879;
+	color: var(--cor-primaria);
 }
 
 /* CSS da Página Inicial --------------------------------------------------------------------------------------------------------------- */
@@ -164,12 +175,12 @@ footer {
 /* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
 
 form {
-	background: #FFFFFF;
+	background: #FEFEFE;
 	padding: 1px;
 	width: 50%;
 	margin: 40px auto;
 	font-size: 18px;
-	border: 2px solid #FF7879;
+	border: 2px solid var(--cor-primaria);
 }
 
 .form-intro-text {
@@ -194,7 +205,7 @@ form label {
 }
 
 .form-required {
-	color: #FF7879;
+	color: var(--cor-primaria);
 }
 
 /* Voltar ao botão SUBMIT para verificar se há a possibilidade de deixar sempre no meio*/
@@ -204,7 +215,7 @@ form label {
 	margin: 20px 0;
 	padding: 10px 0;
 	left: 40%;
-	background: #FF7879;
+	background: var(--cor-primaria);
 	color: #FEFEFE;
 	border: none;
 	border-radius: 5px;
@@ -215,6 +226,6 @@ form label {
 }
 
 .enviar:hover {
-	background: #C45C5C;
+	background: var(--cor-hover);
 	transform: scale(1.01);
 }
