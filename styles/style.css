@@ -51,7 +51,7 @@ body {
 	letter-spacing: 0px;
 }
 
-nav {
+.navegacao__paginas {
 	text-transform: lowercase;
 	position: absolute;
 	top: 55px;
@@ -59,11 +59,11 @@ nav {
 	letter-spacing: 0px;
 }
 
-nav li {
+.navegacao__paginas li {
 	display: inline;
 }
 
-nav a {
+.navegacao__paginas a {
 	font-family: var(--fonte-secundaria);
 	text-decoration: none;
 	font-size: 1.35rem;
@@ -71,11 +71,11 @@ nav a {
 	color: var(--cor-primaria);
 }
 
-nav a:hover {
+.navegacao__paginas--texto:hover {
 	color: var(--cor-hover);
 }
 
-.icons-redes-sociais {
+.navegacao__redes_sociais {
 	position: absolute;
 	top: 95px;
 	right: 265px;
