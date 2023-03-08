@@ -35,7 +35,7 @@ body {
 
 .logo-nav span {
 	font-family: var(--fonte-terciaria);
-	font-size: 80px;
+	font-size: 5rem;
 	display: inline-block;
 	transition: 0.5s;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .logo-nav h1 {
-	font-size: 16px;
+	font-size: 1rem;
 	font-family: var(--fonte-secundaria);
 	letter-spacing: 0px;
 }
@@ -66,7 +66,7 @@ nav li {
 nav a {
 	font-family: var(--fonte-secundaria);
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 1.35rem;
 	padding-left: 15px;
 	color: var(--cor-primaria);
 }
@@ -99,14 +99,15 @@ nav a:hover {
 /* CSS da Página Inicial --------------------------------------------------------------------------------------------------------------- */
 
 .main-descricao-foto {
+	display: flex;
+	align-items: center;
+	gap: 5%;
 	width: 76%;
 	margin: 20px auto;
-	position: relative;
 }
 
 .foto-perfil {
-	width: 600px;
-	margin: 20px 0 40px 35px;
+	width: 45%;
 	border-radius: 50px;
 	float: right;
 }
@@ -120,11 +121,8 @@ nav a:hover {
 }
 
 .main-descricao-foto-texto {
-	display: block;
-	top: 10px;
-	left: 10px;
 	padding-top: 3em;
-	font-size: 18px;
+	font-size: 1.12rem;
 }
 
 .main-descricao-foto-texto p {
@@ -140,10 +138,9 @@ nav a:hover {
 	width: 78%;
 	margin: 50px auto;
 	clear: right;
-	display: block;
 	font-weight: bold;
-	font-size: 18px;
-	border: 2px solid red;
+	font-size: 1.12rem;
+	/* border: 2px solid red; */
 }
 
 .titulo-cursos-projetos h1, h2 {
@@ -158,7 +155,7 @@ nav a:hover {
 
 .copyright {
 	color: #FFFFFF;
-	font-size: 13px;
+	font-size: 0.81rem;
 	margin: 20px 0 0;
 }*/
 /* VOLTAR NO FOOTER, ARRUMAR O ESPAÇAMENTO*/
@@ -168,7 +165,7 @@ footer {
 }
 
 .copyright {
-	font-size: 13px;
+	font-size: 0.81rem;
 	clear: right;
 }
 
@@ -179,7 +176,7 @@ form {
 	padding: 1px;
 	width: 50%;
 	margin: 40px auto;
-	font-size: 18px;
+	font-size: 1.12rem;
 	border: 2px solid var(--cor-primaria);
 }
 
@@ -211,7 +208,7 @@ form label {
 /* Voltar ao botão SUBMIT para verificar se há a possibilidade de deixar sempre no meio*/
 .enviar {
 	position: relative;
-	width: 150px;
+	width: 15%;
 	margin: 20px 0;
 	padding: 10px 0;
 	left: 40%;
@@ -219,7 +216,7 @@ form label {
 	color: #FEFEFE;
 	border: none;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: bold;
 	transition: 1s transform;
 	cursor: pointer;
