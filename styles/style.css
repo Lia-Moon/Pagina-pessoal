@@ -233,3 +233,24 @@ form label {
 	background: var(--cor-hover);
 	transform: scale(1.01);
 }
+
+@media screen and (max-width: 500px) {
+	.cabecalho__ {
+		flex-direction: column;
+		align-content: center;
+		margin: 20px auto;
+	}
+
+	.navegacao {
+		margin: 20px auto;
+	}
+
+	.main-descricao-foto {
+		flex-direction: column-reverse;
+		gap: 35px;
+	}
+
+	.foto-perfil {
+		width: 80%;
+	}
+}
