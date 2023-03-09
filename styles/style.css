@@ -22,6 +22,7 @@ body {
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
 	position: absolute;
+	width: 100vw;
 }
 
 /* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
