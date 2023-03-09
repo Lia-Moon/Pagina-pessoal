@@ -21,6 +21,7 @@ body {
 	overflow: hidden; /*Tira o rolamento criado automaticamente*/
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
+	position: fixed;
 }
 
 /* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
@@ -28,7 +29,7 @@ body {
 .cabecalho__ {
 	display: flex;
 	justify-content: space-around;
-	margin: 20px 0;
+	margin: 2% 0;
 	letter-spacing: -2.2px;
 }
 
@@ -57,7 +58,7 @@ body {
 	align-self: center;
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 25px;
 }
 
 .navegacao__paginas {
@@ -91,7 +92,7 @@ body {
 }
 
 .fa-brands {
-	padding-right: 5px;
+	padding-right: 1.5%;
 	color: var(--cor-primaria);
 }
 
@@ -111,7 +112,7 @@ body {
 	align-items: center;
 	gap: 5%;
 	width: 76%;
-	margin: 20px auto;
+	margin: 2% auto;
 }
 
 .foto-perfil {
@@ -143,7 +144,7 @@ body {
 
 .titulo-cursos-projetos {
 	width: 78%;
-	margin: 50px auto;
+	margin: 2.5% auto;
 	clear: right;
 	font-weight: bold;
 	font-size: 1.12rem;
