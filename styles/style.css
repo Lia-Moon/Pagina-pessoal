@@ -21,7 +21,7 @@ body {
 	overflow: hidden; /*Tira o rolamento criado automaticamente*/
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
-	position: fixed;
+	position: absolute;
 }
 
 /* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
