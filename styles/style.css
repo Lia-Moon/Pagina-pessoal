@@ -22,40 +22,46 @@ body {
 	font-family: var(--fonte-primaria);
 }
 
-.logo-nav {
-	position: relative;
+/* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
+
+.cabecalho__ {
 	width: 100%;
-	margin: 10px auto;
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0;
 	letter-spacing: -2.2px;
 }
 
 .logo-nav-nome {
-	padding: 20px 0 10px 70px;
+	text-align: center;
 }
 
-.logo-nav span {
+.cabecalho__ span {
 	font-family: var(--fonte-terciaria);
 	font-size: 5rem;
-	display: inline-block;
 	transition: 0.5s;
 }
 
-.logo-nav span:hover {
+.cabecalho__ span:hover {
 	transition: 0.2s;
 	color: var(--cor-primaria);
 }
 
-.logo-nav h1 {
+.cabecalho__ h1 {
 	font-size: 1rem;
 	font-family: var(--fonte-secundaria);
 	letter-spacing: 0px;
 }
 
+.navegacao {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
 .navegacao__paginas {
 	text-transform: lowercase;
-	position: absolute;
-	top: 55px;
-	right: 90px;
 	letter-spacing: 0px;
 }
 
@@ -71,14 +77,12 @@ body {
 	color: var(--cor-primaria);
 }
 
-.navegacao__paginas--texto:hover {
+.navegacao__paginas a:hover {
 	color: var(--cor-hover);
 }
 
 .navegacao__redes_sociais {
-	position: absolute;
-	top: 95px;
-	right: 265px;
+	text-align: center;
 	transform: scale(1.8);
 }
 
@@ -107,7 +111,7 @@ body {
 }
 
 .foto-perfil {
-	width: 45%;
+	width: 50%;
 	border-radius: 50px;
 	float: right;
 }
