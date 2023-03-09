@@ -18,6 +18,7 @@
 }
 
 body {
+	height: 100vh;
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
 }
@@ -73,12 +74,16 @@ body {
 	font-family: var(--fonte-secundaria);
 	text-decoration: none;
 	font-size: 1.35rem;
-	padding-left: 15px;
+	padding: 0 15px 0 15px;
 	color: var(--cor-primaria);
 }
 
 .navegacao__paginas a:hover {
 	color: var(--cor-hover);
+}
+
+.navegacao__paginas--texto {
+	word-spacing: -7px;
 }
 
 .navegacao__redes_sociais {
@@ -125,7 +130,6 @@ body {
 }
 
 .main-descricao-foto-texto {
-	padding-top: 3em;
 	font-size: 1.12rem;
 }
 
