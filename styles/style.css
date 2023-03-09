@@ -21,13 +21,12 @@ body {
 	overflow: hidden; /*Tira o rolamento criado automaticamente*/
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
-	position: absolute;
-	width: 100vw;
 }
 
 /* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
 
 .cabecalho__ {
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	margin: 2% 0;
@@ -71,11 +70,15 @@ body {
 	display: inline;
 }
 
+.navegacao__paginas ul {
+	display: flex;
+	gap: 25px; 
+}
+
 .navegacao__paginas a {
 	font-family: var(--fonte-secundaria);
 	text-decoration: none;
 	font-size: 1.35rem;
-	padding: 0 15px 0 15px;
 	color: var(--cor-primaria);
 }
 
@@ -149,7 +152,6 @@ body {
 	clear: right;
 	font-weight: bold;
 	font-size: 1.12rem;
-	/* border: 2px solid red; */
 }
 
 .titulo-cursos-projetos h1, h2 {
@@ -170,7 +172,7 @@ body {
 /* VOLTAR NO FOOTER, ARRUMAR O ESPAÇAMENTO*/
 footer {
 	text-align: center;
-	padding: 20px;
+	margin: 5%;
 }
 
 .copyright {
@@ -245,6 +247,14 @@ form label {
 
 	.navegacao {
 		margin: 20px auto;
+	}
+
+	.navegacao__paginas ul {
+		gap: 10px;
+	}
+
+	.navegacao__paginas a {
+		font-size: 1rem;
 	}
 
 	.main-descricao-foto {
