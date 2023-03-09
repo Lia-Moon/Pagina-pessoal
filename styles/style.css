@@ -18,7 +18,7 @@
 }
 
 body {
-	height: 100vh;
+	overflow: hidden; /*Tira o rolamento criado automaticamente*/
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
 }
@@ -26,7 +26,6 @@ body {
 /* Cabeçalho ----------------------------------------------------------------------------------------------------------------------------- */
 
 .cabecalho__ {
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	margin: 20px 0;
