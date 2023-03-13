@@ -10,6 +10,7 @@
 	--cor-fundo-pagina: #F4F4F4;
 	--cor-primaria: #FF7879;
 	--cor-secundaria: ;
+	--cor-textos: #000000;
 	--cor-hover: #C45C5C;
 
 	--fonte-primaria: 'Montserrat', sans-serif; /*fonte usada no corpo do texto*/
@@ -84,10 +85,32 @@ body {
 
 .navegacao__paginas a:hover {
 	color: var(--cor-hover);
+	cursor: pointer;
 }
 
 .navegacao__paginas--texto {
 	word-spacing: -7px;
+}
+
+.navegacao__paginas--curriculos {
+	display: none;
+	width: 30%;
+	position: absolute;
+	background-color: #F1F1F1;
+	align-items: flex-end;
+	border: 2px solid red;
+}
+
+.navegacao__paginas--curriculos a {
+	color: var(--cor-textos);
+	font-size: 1rem;
+	font-family: var(--fonte-primaria);
+	padding: 5px;
+}
+
+.navegacao__paginas:hover .navegacao__paginas--curriculos {
+	display: flex;
+	flex-direction: column;
 }
 
 .navegacao__redes_sociais {
