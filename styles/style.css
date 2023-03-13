@@ -7,7 +7,7 @@
 */
 
 :root {
-	--cor-fundo-pagina: #F4F4F4;
+	--cor-fundo-pagina: #000000; /*#F4F4F4;*/
 	--cor-primaria: #FF7879;
 	--cor-secundaria: ;
 	--cor-hover: #C45C5C;
