@@ -19,7 +19,7 @@
 }
 
 body {
-	overflow: hidden; /*Tira o rolamento criado automaticamente*/
+	overflow-x: hidden; /*Tira o rolamento horizontal criado automaticamente*/
 	background: var(--cor-fundo-pagina);
 	font-family: var(--fonte-primaria);
 }
@@ -169,7 +169,7 @@ body {
 	line-height: 1.2em;
 }
 
-.titulo-cursos-projetos {
+.secao__menu__conquistas {
 	width: 78%;
 	margin: 2.5% auto;
 	clear: right;
@@ -177,8 +177,47 @@ body {
 	font-size: 1.12rem;
 }
 
-.titulo-cursos-projetos h1, h2 {
-	padding-bottom: 1em;
+.secao__menu__conquistas h2, h3 {
+	padding: 1em 0;
+}
+
+.secao__menu__conquistas--cursos--e--projetos {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 40px;
+}
+
+.secao__menu__conquistas--overlay img {
+	width: 150px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.secao__menu__conquistas--cursos--e--projetos img:hover {
+	cursor: pointer;
+	filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+/*.secao__menu__conquistas--overlay {
+	align-items: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #FF7879;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}*/
+
+.secao__menu__conquistas--cursos--e--projetos img:hover .secao__menu__conquistas--overlay {
+	width: 100%;
+}
+
+.secao__menu__conquistas--overlay--texto {
+
 }
 
 /*footer {
