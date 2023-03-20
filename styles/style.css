@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Dancing+Script&family=Montserrat&display=swap');
+
 /*Cores monocromáticas
 #FF7879
 #EAB4B4
@@ -67,10 +69,6 @@ body {
 	letter-spacing: 0px;
 }
 
-.navegacao__paginas li {
-	display: inline;
-}
-
 .navegacao__paginas ul {
 	display: flex;
 	gap: 25px; 
@@ -81,6 +79,7 @@ body {
 	text-decoration: none;
 	font-size: 1.35rem;
 	color: var(--cor-primaria);
+	word-spacing: -7px;
 }
 
 .navegacao__paginas a:hover {
@@ -88,29 +87,32 @@ body {
 	cursor: pointer;
 }
 
-.navegacao__paginas--texto {
-	word-spacing: -7px;
-}
-
-.navegacao__paginas--curriculos {
-	display: none;
-	width: 30%;
-	position: absolute;
-	background-color: #F1F1F1;
-	align-items: flex-end;
-	border: 2px solid red;
-}
-
-.navegacao__paginas--curriculos a {
-	color: var(--cor-textos);
-	font-size: 1rem;
-	font-family: var(--fonte-primaria);
-	padding: 5px;
-}
-
-.navegacao__paginas:hover .navegacao__paginas--curriculos {
+.navegacao__paginas__resume:hover .navegacao__paginas__resume--curriculos {
 	display: flex;
 	flex-direction: column;
+}
+
+.navegacao__paginas__resume--curriculos {
+	display: none;
+	position: absolute;
+	background-color: var(--cor-primaria);
+	align-items: flex-start;
+	box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+	z-index: 1; /*Permite que o menu fique suspenso enquanto o mouse está em cima do conteúdo*/
+}
+
+.navegacao__paginas__resume--curriculos a {
+	color: #F4F4F4;
+	font-size: 1rem;
+	font-family: var(--fonte-primaria);
+	padding: 10px 5px 10px 5px;
+	min-width: 84px;
+	border: 2px solid #e6e2e2;
+}
+
+.navegacao__paginas__resume--curriculos a:hover{
+	background-color: #F4F4F4;
+	color: var(--cor-textos);
 }
 
 .navegacao__redes_sociais {
@@ -146,6 +148,7 @@ body {
 	width: 50%;
 	border-radius: 50px;
 	float: right;
+	box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-descricao-foto strong {
@@ -267,6 +270,7 @@ footer {
 	padding: 20px;
 	font-size: 0.81rem;
 	clear: right;
+	color: #F4F4F4;
 }
 
 /* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
