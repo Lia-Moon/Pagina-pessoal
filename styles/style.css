@@ -184,8 +184,8 @@ body {
 .secao__menu__conquistas--cursos--e--projetos {
 	display: grid;
 	/*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
-	grid-template-columns: 150px 150px 150px 150px;
-	grid-gap: 2.5rem;
+	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-gap: 4rem;
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
@@ -196,18 +196,7 @@ body {
 	height: 150px;
 	border-radius: 5px;
 	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
-	transition: 0.5s ease;
-}
-
-.secao__menu__conquistas--overlay:hover img{
-	cursor: pointer;
-	filter: grayscale(100%);
-	opacity: 0.5;
-}
-
-.secao__menu__conquistas--overlay:hover .secao__menu__conquistas--overlay--texto {
-	cursor: pointer;
-	visibility: visible;
+	transition: 0.5s ease-in-out;
 }
 
 .secao__menu__conquistas--overlay {
@@ -221,11 +210,23 @@ body {
 	word-break: break-word;
 }
 
+.secao__menu__conquistas--overlay:hover img{
+	cursor: pointer;
+	filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+.secao__menu__conquistas--overlay:hover .secao__menu__conquistas--overlay--texto {
+	cursor: pointer;
+	visibility: visible;
+}
+
 .secao__menu__conquistas--overlay span {
 	width: 100px;
 	align-self: center;
 	background-color: var(--cor-primaria);
 	opacity: 0.95;
+	border-radius: 3px;
 }
 
 .secao__menu__conquistas--overlay--texto {
@@ -256,11 +257,14 @@ body {
 }*/
 /* VOLTAR NO FOOTER, ARRUMAR O ESPAÇAMENTO*/
 footer {
+	width: 100%;
 	text-align: center;
-	margin: 5%;
+	margin-top: 5px;
+	background-color: var(--cor-primaria);
 }
 
 .copyright {
+	padding: 20px;
 	font-size: 0.81rem;
 	clear: right;
 }
