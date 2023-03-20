@@ -183,7 +183,6 @@ body {
 
 .secao__menu__conquistas--cursos--e--projetos {
 	display: grid;
-	/*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
 	grid-template-columns: 150px 150px 150px 150px 150px;
 	grid-gap: 4rem;
 	justify-content: flex-start;
