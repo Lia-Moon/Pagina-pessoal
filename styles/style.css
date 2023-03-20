@@ -199,10 +199,15 @@ body {
 	transition: 0.5s ease;
 }
 
-.secao__menu__conquistas--cursos--e--projetos img:hover, .secao__menu__conquistas--overlay--texto:hover + .secao__menu__conquistas--cursos--e--projetos img{
+.secao__menu__conquistas--overlay:hover img{
 	cursor: pointer;
 	filter: grayscale(100%);
 	opacity: 0.5;
+}
+
+.secao__menu__conquistas--overlay:hover .secao__menu__conquistas--overlay--texto {
+	cursor: pointer;
+	visibility: visible;
 }
 
 .secao__menu__conquistas--overlay {
@@ -236,11 +241,6 @@ body {
 	cursor: pointer;
 
 	visibility: hidden;
-}
-
-.secao__menu__conquistas--overlay--texto:hover, .secao__menu__conquistas--cursos--e--projetos img:hover + .secao__menu__conquistas--overlay--texto {
-	cursor: pointer;
-	visibility: visible;
 }
 
 /*footer {
