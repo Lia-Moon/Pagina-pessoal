@@ -358,4 +358,15 @@ form label {
 	.foto-perfil {
 		width: 80%;
 	}
+
+	.secao__menu__conquistas--cursos--e--projetos {
+		grid-template-columns: 1fr 1fr; /*1fr = 1 fraction of the space*/
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 0.5rem;
+	}
+
+	.secao__menu__conquistas--cursos--e--projetos img {
+		width: 150px;
+		height: 150px;
+	}
 }
