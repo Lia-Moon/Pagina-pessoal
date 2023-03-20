@@ -172,7 +172,7 @@ body {
 	line-height: 1.2em;
 }
 
-.secao__menu__conquistas {
+.secao__menu__conquistas { /*Section ------------------*/
 	width: 78%;
 	margin: 2.5% auto;
 	clear: right;
@@ -357,4 +357,19 @@ form label {
 	.foto-perfil {
 		width: 80%;
 	}
+
+	.secao__menu__conquistas--cursos--e--projetos {
+		grid-template-columns: 1fr 1fr; /*1fr = 1 fraction of the space*/
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 0.5rem;
+	}
+
+	.secao__menu__conquistas--cursos--e--projetos img {
+		width: 150px;
+		height: 150px;
+	}
+
+	/*.secao__menu__conquistas--overlay--texto {
+		position: relative;
+	}*/
 }
