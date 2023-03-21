@@ -224,7 +224,8 @@ body {
 }
 
 .secao__menu__conquistas--overlay span {
-	width: 100px;
+	max-width: 150px;
+	height: auto;
 	align-self: center;
 	background-color: var(--cor-primaria);
 	opacity: 0.95;
