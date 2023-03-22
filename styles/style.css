@@ -294,64 +294,6 @@ footer {
 	color: #F4F4F4;
 }
 
-/* CSS da Página Contato --------------------------------------------------------------------------------------------------------------- */
-
-form {
-	background: #FEFEFE;
-	padding: 1px;
-	width: 50%;
-	margin: 40px auto;
-	font-size: 1.12rem;
-	border: 2px solid var(--cor-primaria);
-}
-
-.form-intro-text {
-	width: 73%;
-	margin: 30px auto;
-	text-align: justify;
-	line-height: 1.3em;
-}
-
-form label {
-	display: block;
-	text-align: left;
-	margin: 0 auto;
-	width: 73%
-}
-
-.input-padrao {
-	display: block;
-	margin: 8px auto;
-	padding: 8px 10px;
-	width: 70%;
-}
-
-.form-required {
-	color: var(--cor-primaria);
-}
-
-/* Voltar ao botão SUBMIT para verificar se há a possibilidade de deixar sempre no meio*/
-.enviar {
-	position: relative;
-	width: 15%;
-	margin: 20px 0;
-	padding: 10px 0;
-	left: 40%;
-	background: var(--cor-primaria);
-	color: #FEFEFE;
-	border: none;
-	border-radius: 5px;
-	font-size: 1rem;
-	font-weight: bold;
-	transition: 1s transform;
-	cursor: pointer;
-}
-
-.enviar:hover {
-	background: var(--cor-hover);
-	transform: scale(1.01);
-}
-
 @media screen and (max-width: 500px) {
 	.cabecalho__ {
 		flex-direction: column;
