@@ -136,19 +136,19 @@ body {
 
 /* CSS da Página Inicial --------------------------------------------------------------------------------------------------------------- */
 
+.foto-perfil {
+	width: 50%;
+	border-radius: 50px;
+	float: right;
+	box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
 .main-descricao-foto {
 	display: flex;
 	align-items: center;
 	gap: 5%;
 	width: 76%;
 	margin: 2% auto;
-}
-
-.foto-perfil {
-	width: 50%;
-	border-radius: 50px;
-	float: right;
-	box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-descricao-foto strong {
@@ -161,6 +161,7 @@ body {
 
 .main-descricao-foto-texto {
 	font-size: 1.12rem;
+	max-width: 450px;
 }
 
 .main-descricao-foto-texto p {
@@ -186,7 +187,7 @@ body {
 
 .secao__menu__conquistas--cursos--e--projetos {
 	display: grid;
-	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-template-columns: 150px 150px 150px 150px 200px;
 	grid-gap: 4rem;
 	justify-content: flex-start;
 	margin: 0;
@@ -209,7 +210,7 @@ body {
 	align-self: center;
 	position: relative;
 	padding: .5rem 0;
-	word-break: break-word;
+	text-decoration: none;
 }
 
 .secao__menu__conquistas--overlay:hover img{
@@ -223,18 +224,15 @@ body {
 	visibility: visible;
 }
 
-.secao__menu__conquistas--overlay span {
-	max-width: 150px;
+.secao__menu__conquistas--overlay--texto {
 	height: auto;
 	align-self: center;
 	background-color: var(--cor-primaria);
 	opacity: 0.95;
 	border-radius: 3px;
-}
 
-.secao__menu__conquistas--overlay--texto {
 	position: absolute;
-	max-width: 100px;
+	max-width: 120px;
 	word-break: break-word;
 	
 	color: #F1F1F1;
@@ -245,6 +243,29 @@ body {
 	cursor: pointer;
 
 	visibility: hidden;
+}
+
+.secao__menu__conquistas--see--more {
+	border-radius: 3px;
+	padding: 15px;
+	background-color: var(--cor-primaria);
+	max-width: fit-content;
+	height: auto;
+	align-self: center;
+
+	text-decoration: none;
+	color: #F1F1F1;
+	font-family: var(--fonte-primaria);
+	transition: 0.5s;
+}
+
+.secao__menu__conquistas--see--more:hover {
+	background-color: var(--cor-hover);
+	transform: scale(1.05);
+}
+
+.secao__menu__conquistas--see-more-scale {
+	font-size: 1.8rem;
 }
 
 /*footer {
