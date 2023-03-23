@@ -286,8 +286,8 @@ footer {
 	color: #F4F4F4;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 600px and down) -----------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) and (max-width: 600px) {
 	.cabecalho__ {
 		flex-direction: column;
 		margin: 20px auto;
@@ -368,8 +368,8 @@ footer {
 	}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) ----------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
 	.cabecalho__ {
 		flex-direction: column;
 		margin: 20px auto;
@@ -387,7 +387,7 @@ footer {
 	}
 
 	.navegacao__paginas a {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 
 	.main-descricao-foto {
@@ -455,17 +455,62 @@ footer {
 	}
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+	.cabecalho__ {
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.secao__menu__conquistas--cursos--e--projetos {
+		grid-template-columns: 1fr 1fr 1fr 1fr; /*1fr = 1 fraction of the space*/
+		grid-template-rows: 1fr;
+		grid-gap: 0.5rem;
+		justify-content: center;
+	}
+
+	.secao__menu__conquistas--overlay {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.secao__menu__conquistas--overlay--texto {
+		display: flex;
+		position: relative;
+		visibility: visible;
+		height: 45px;
+		align-items: center;
+		justify-content: center;
+		padding: 8px;
+		min-width: 120px;
+		border-radius: 5px 5px 0 0;
+		border: 2.5px solid var(--cor-primaria);
+		background-color: #F1F1F1;
+		color: var(--cor-primaria);
+	}
+
+	.secao__menu__conquistas--overlay--texto:hover {
+		background-color: var(--cor-primaria);
+	}
+
+	.secao__menu__conquistas--see--more {
+		padding-top: 10px;
+	}
+
+	.secao__menu__conquistas--see--more:hover {
+		position: relative;
+		background-color: var(--cor-primaria);
+		transform: scale(1);
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) ---------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) ----------------------------------------------------------------------*/
 @media only screen and (min-width: 1200px) {
 
 }
