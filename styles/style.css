@@ -146,6 +146,7 @@ body {
 	border-radius: 50px;
 	float: right;
 	box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
+	max-width: 500px;
 }
 
 .main-descricao-foto {
@@ -178,7 +179,7 @@ body {
 	line-height: 1.2em;
 }
 
-.secao__menu__conquistas { /*Section ------------------*/
+.secao__menu__conquistas { /*Section ------------------------------------------------------------------------------------*/
 	width: 78%;
 	margin: 2.5% auto;
 	clear: right;
@@ -193,7 +194,7 @@ body {
 .secao__menu__conquistas--cursos--e--projetos {
 	display: grid;
 	grid-template-columns: 150px 150px 150px 150px 200px;
-	grid-gap: 4rem;
+	grid-gap: 4%;
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
@@ -211,7 +212,7 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	justify-content: center + safe;
+	justify-content: center;
 	align-self: center;
 	position: relative;
 	padding: .5rem 0;
@@ -289,6 +290,8 @@ footer {
 /* Extra small devices (phones, 600px and down) -----------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px) and (max-width: 600px) {
 	.cabecalho__ {
+		transform: scale(1.1);
+		width: fit-content;
 		flex-direction: column;
 		margin: 20px auto;
 	}
@@ -304,6 +307,10 @@ footer {
 
 	.navegacao__paginas a {
 		font-size: 1rem;
+	}
+
+	.navegacao__paginas a:hover {
+		color: var(--cor-primaria);
 	}
 
 	.main-descricao-foto {
@@ -352,8 +359,10 @@ footer {
 		color: var(--cor-primaria);
 	}
 
-	.secao__menu__conquistas--overlay--texto:hover {
-		background-color: var(--cor-primaria);
+	.secao__menu__conquistas--overlay:hover, .secao__menu__conquistas--overlay--texto:hover, .secao__menu__conquistas--overlay:hover img {
+		background-color: #F1F1F1;
+		filter: grayscale(0%);
+		opacity: 1;
 	}
 
 	.secao__menu__conquistas--see--more {
@@ -390,6 +399,10 @@ footer {
 		font-size: 1.3rem;
 	}
 
+	.navegacao__paginas a:hover {
+		color: var(--cor-primaria);
+	}
+	
 	.main-descricao-foto {
 		flex-direction: column-reverse;
 		gap: 35px;
@@ -439,8 +452,10 @@ footer {
 		color: var(--cor-primaria);
 	}
 
-	.secao__menu__conquistas--overlay--texto:hover {
-		background-color: var(--cor-primaria);
+	.secao__menu__conquistas--overlay:hover, .secao__menu__conquistas--overlay--texto:hover, .secao__menu__conquistas--overlay:hover img {
+		background-color: #F1F1F1;
+		filter: grayscale(0%);
+		opacity: 1;
 	}
 
 	.secao__menu__conquistas--see--more {
@@ -461,6 +476,10 @@ footer {
 	.cabecalho__ {
 		justify-content: center;
 		gap: 20px;
+	}
+
+	.navegacao__paginas a:hover {
+		color: var(--cor-primaria);
 	}
 
 	.secao__menu__conquistas--cursos--e--projetos {
@@ -490,8 +509,10 @@ footer {
 		color: var(--cor-primaria);
 	}
 
-	.secao__menu__conquistas--overlay--texto:hover {
-		background-color: var(--cor-primaria);
+	.secao__menu__conquistas--overlay:hover, .secao__menu__conquistas--overlay--texto:hover, .secao__menu__conquistas--overlay:hover img {
+		background-color: #F1F1F1;
+		filter: grayscale(0%);
+		opacity: 1;
 	}
 
 	.secao__menu__conquistas--see--more {
@@ -507,11 +528,20 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) ---------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
+	.cabecalho__ {
+		margin: 20px auto;
+		max-width: 900px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) ----------------------------------------------------------------------*/
 @media only screen and (min-width: 1200px) {
+	.cabecalho__ {
+		max-width: 1000px;
+		justify-content: center;
+		gap: 20%;
+		margin: 20px auto;
+	}
 
 }
  
