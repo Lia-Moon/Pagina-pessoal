@@ -273,6 +273,22 @@ body {
 	font-size: 1.8rem;
 }
 
+/* Página certificados ----------------------------------------------------------------------------------------------------------------------------- */
+
+.certificados {
+	width: 80%;
+	margin: 10px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /*1fr = 1 fraction of the space*/
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+	justify-content: center;
+}
+
+.certificados__imagens {
+	width: 300px;
+}
+
 footer {
 	width: 100%;
 	text-align: center;
