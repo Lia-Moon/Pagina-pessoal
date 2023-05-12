@@ -275,18 +275,29 @@ body {
 
 /* Página certificados ----------------------------------------------------------------------------------------------------------------------------- */
 
+.titulo__certificados {
+	width: 100%;
+	margin: 10px auto;
+	padding: 20px 0;
+	font-size: 2em;
+	font-weight: bold;
+	color: #F4F4F4;
+	text-align: center;
+	background-color: var(--cor-primaria);
+}
+
 .certificados {
-	width: 80%;
+	width: 90%;
 	margin: 10px auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr; /*1fr = 1 fraction of the space*/
 	/*grid-template-rows: 1fr 1fr;*/
-	grid-gap: 10px;
-	justify-content: center;
+	grid-gap: 15px;
+	place-items: center;
 }
 
 .certificados__imagens {
-	width: 400px;
+	width: 100%;
 }
 
 footer {
@@ -391,6 +402,16 @@ footer {
 		transform: scale(1);
 		transform: translate(90px, 0);
 	}
+
+	.titulo__certificados {
+		padding: 10px 0;
+		font-size: 1.5em;
+	}
+
+	.certificados {
+		margin: 10px auto;
+		grid-template-columns: 1fr;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) ----------------------------------------------------------------------*/
@@ -484,6 +505,17 @@ footer {
 		transform: scale(1);
 		transform: translate(90px, 0);
 	}
+
+	.titulo__certificados {
+		padding: 10px 0;
+		font-size: 1.5em;
+	}
+
+	.certificados {
+		margin: 10px auto;
+		grid-template-columns: 1fr;
+	}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) -------------------------------------------------------------------------------------*/
@@ -540,6 +572,16 @@ footer {
 		background-color: var(--cor-primaria);
 		transform: scale(1);
 	}
+
+	.titulo__certificados {
+		padding: 10px 0;
+		font-size: 1.5em;
+	}
+
+	.certificados {
+		margin: 10px auto;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) ---------------------------------------------------------------------------------------*/
@@ -547,6 +589,16 @@ footer {
 	.cabecalho__ {
 		margin: 20px auto;
 		max-width: 900px;
+	}
+
+	.titulo__certificados {
+		padding: 10px 0;
+		font-size: 1.5em;
+	}
+
+	.certificados {
+		margin: 10px auto;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -557,6 +609,22 @@ footer {
 		justify-content: center;
 		gap: 20%;
 		margin: 20px auto;
+	}
+
+}
+
+/* (VERY) Extra large devices (large laptops and desktops, 1400px and up) ----------------------------------------------------------------------*/
+@media only screen and (min-width: 1400px) {
+	.cabecalho__ {
+		max-width: 1000px;
+		justify-content: center;
+		gap: 20%;
+		margin: 20px auto;
+	}
+
+	.certificados {
+		margin: 10px auto;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 }
