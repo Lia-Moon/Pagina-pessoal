@@ -615,11 +615,42 @@ footer {
 
 /* (VERY) Extra large devices (large laptops and desktops, 1400px and up) ----------------------------------------------------------------------*/
 @media only screen and (min-width: 1400px) {
+	
 	.cabecalho__ {
 		max-width: 1000px;
 		justify-content: center;
 		gap: 20%;
 		margin: 20px auto;
+	}
+
+	.foto-perfil {
+		width: 100%;
+		border-radius: 50px;
+		float: right;
+		box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
+		max-width: 500px;
+	}
+	
+	.main-descricao-foto {
+		display: grid;
+		align-items: center;
+		gap: 5%;
+		width: 60%;
+		margin: 2% auto;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.secao__menu__conquistas {
+		width: 60%;
+	}
+
+	.secao__menu__conquistas--cursos--e--projetos {
+		width: 100%;
+		justify-content: space-around;
+	}
+	
+	.secao__menu__conquistas--overlay {
+		justify-content: center;
 	}
 
 	.certificados {
