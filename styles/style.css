@@ -57,6 +57,17 @@ body {
 	letter-spacing: 0px;
 }
 
+.light__dark__mode {
+	background-color: #000000;
+	color: #F1F1F1;
+	position: relative;
+	height: fit-content;
+}
+
+.light__dark__mode--button {
+	width: auto;
+}
+
 .navegacao {
 	align-self: center;
 	display: flex;
