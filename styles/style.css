@@ -76,6 +76,14 @@ body {
 	color: var(--cor-fonte-dark-mode);
 }
 
+.logo-nav-nome--span {
+	color: var(--cor-primaria);
+}
+
+.logo-nav-nome--span:hover {
+	color: var(--cor-fonte-dark-mode);
+}
+
 .light__dark__mode--switch {
 	position: relative;
 	height: fit-content;
