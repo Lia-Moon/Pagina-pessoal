@@ -15,6 +15,9 @@
 	--cor-textos: #000000;
 	--cor-hover: #C45C5C;
 
+	--cor-fundo-pagina-dark-mode: #141415; /*Eerie black*/
+	--cor-fonte-dark-mode: #F2EFE9; /*Isabelline*/
+
 	--fonte-primaria: 'Montserrat', sans-serif; /*fonte usada no corpo do texto*/
 	--fonte-secundaria: 'Cousine', monospace; /*fonte usada no menu*/
 	--fonte-terciaria: 'Dancing Script', cursive; /*fonte usada no título*/
@@ -30,14 +33,19 @@ body {
 
 .cabecalho__ {
 	width: 100%;
-	display: flex;
+	display: grid;
 	justify-content: space-around;
 	margin: 2% 0;
 	letter-spacing: -2.2px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
 }
 
 .logo-nav-nome {
 	text-align: center;
+	grid-column: 1;
+	grid-row: 1 / 4;
 }
 
 .cabecalho__ span {
@@ -57,16 +65,89 @@ body {
 	letter-spacing: 0px;
 }
 
-.light__dark__mode {
-	background-color: #000000;
-	color: #F1F1F1;
+.botoes__dark__lang {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.light__dark__mode { /*Altera o body com as definições colocadas aqui*/
+	background: var(--cor-fundo-pagina-dark-mode);
+	color: var(--cor-fonte-dark-mode);
+}
+
+.light__dark__mode--switch {
 	position: relative;
 	height: fit-content;
+	place-self: center;
 }
 
 .light__dark__mode--button {
 	width: auto;
 }
+
+/* The switch - the box around the slider */
+.botoes__dark__lang--switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .botoes__dark__lang--switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .botoes__dark__lang--switch--slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .botoes__dark__lang--switch--slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .botoes__dark__lang--switch--slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .botoes__dark__lang--switch--slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .botoes__dark__lang--switch--slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .botoes__dark__lang--switch--slider {
+	border-radius: 34px;
+  }
+  
+  .botoes__dark__lang--switch--slider:before {
+	border-radius: 50%;
+  }
 
 .navegacao {
 	align-self: center;
@@ -123,7 +204,7 @@ body {
 }
 
 .navegacao__paginas__resume--curriculos a:hover{
-	background-color: #F4F4F4;
+	background-color: var(--cor-fundo-pagina);
 	color: var(--cor-textos);
 }
 
@@ -156,7 +237,7 @@ body {
 	width: 50%;
 	border-radius: 50px;
 	float: right;
-	box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 25px 0 #28282A;
 	max-width: 500px;
 }
 
@@ -328,9 +409,11 @@ footer {
 /* Extra small devices (phones, 600px and down) -----------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px) and (max-width: 600px) {
 	.cabecalho__ {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 		transform: scale(1.1);
 		width: fit-content;
-		flex-direction: column;
 		margin: 20px auto;
 	}
 
@@ -428,7 +511,9 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) ----------------------------------------------------------------------*/
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 	.cabecalho__ {
+		display: flex;
 		flex-direction: column;
+		gap: 10px;
 		margin: 20px auto;
 		transform: scale(1.1);
 		width: fit-content;
@@ -537,6 +622,10 @@ footer {
 		gap: 20px;
 	}
 
+	.navegacao__paginas ul {
+		gap: 20px;
+	}
+
 	.navegacao__paginas a:hover {
 		color: var(--cor-primaria);
 	}
@@ -618,8 +707,8 @@ footer {
 	.cabecalho__ {
 		max-width: 1000px;
 		justify-content: center;
-		gap: 20%;
-		margin: 20px auto;
+		gap: 15%;
+		margin: 50px auto 20px auto;
 	}
 
 }
@@ -630,8 +719,8 @@ footer {
 	.cabecalho__ {
 		max-width: 1000px;
 		justify-content: center;
-		gap: 20%;
-		margin: 20px auto;
+		gap: 15%;
+		margin: 50px auto 20px auto;
 	}
 
 	.foto-perfil {
@@ -643,10 +732,11 @@ footer {
 	}
 	
 	.main-descricao-foto {
+		max-width: 1000px;
 		display: grid;
 		align-items: center;
 		gap: 5%;
-		width: 60%;
+		width: 76%;
 		margin: 2% auto;
 		grid-template-columns: 1fr 1fr;
 	}

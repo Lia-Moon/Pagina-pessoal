@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 
-	<body>
+	<body id="body">
 		<header>
 			<div class="cabecalho__">
 				<div class="logo-nav-nome">
@@ -32,10 +32,23 @@
 					<h1><strong>Software Engineer student</strong></h1>
 				</div>
 
-				<div class="light__dark__mode">
-					<button class="light__dark__mode--button" onclick="myFunction()">Toggle dark mode</button>
+				<div class="botoes__dark__lang">
+					<div class="light__dark__mode--switch">
+						<label class="botoes__dark__lang--switch">
+							<input type="checkbox" onclick="myFunction()">
+							<span class="botoes__dark__lang--switch--slider"></span>
+						</label>
+						<button class="light__dark__mode--button" onclick="myFunction()">Toggle dark mode</button>
+					</div>					
+					<div class="language__switch">
+						<label class="botoes__dark__lang--switch">
+							<input type="checkbox" onclick="">
+							<span class="botoes__dark__lang--switch--slider"></span>
+						</label>
+						<button class="language__switch--button" onclick="">PT/EN</button>
+					</div>
 				</div>
-				
+
 				<div class="navegacao">
 					<nav class="navegacao__paginas">
 						<ul>
