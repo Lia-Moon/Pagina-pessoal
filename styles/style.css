@@ -153,6 +153,36 @@ body {
 	border-radius: 50%;
   }
 
+  .light__dark__mode--switch--sun {
+	opacity: 0;
+	transition: all 0.2s ease-out 0.35s;
+	position: absolute;
+	top: 9.4px;
+	left: 8px;
+	z-index: 1;
+  }
+
+  .light__dark__mode--switch--moon {
+	opacity: 0;
+	transition: all 0.2s ease-out 0.35s;
+	position: absolute;
+	top: 9.4px;
+	right: 14px;
+	z-index: 1;
+  }
+
+  .light__dark__mode--switch--sun.visible {
+	opacity: 1;
+	transition: all 0.2s ease-in 0.4s;
+	z-index: 1;
+  }
+
+  .light__dark__mode--switch--moon.visible {
+	opacity: 1;
+	transition: all 0.2s ease-in 0.4s;
+	z-index: 1;
+  }
+
 .navegacao {
 	align-self: center;
 	display: flex;
