@@ -154,32 +154,34 @@ body {
   }
 
   .light__dark__mode--switch--sun {
-	opacity: 0;
-	transition: all 0.2s ease-out 0.35s;
+	opacity: 0.2;
+	transition: all 0.5s ease-in 0.4s;
 	position: absolute;
 	top: 9.4px;
 	left: 8px;
 	z-index: 1;
+	pointer-events: none;
+	color: var(--cor-primaria);
   }
 
   .light__dark__mode--switch--moon {
-	opacity: 0;
-	transition: all 0.2s ease-out 0.35s;
+	opacity: 0.2;
+	transition: all 0.5s ease-in 0.4s;
 	position: absolute;
 	top: 9.4px;
 	right: 14px;
 	z-index: 1;
+	pointer-events: none;
+	color: var(--cor-primaria);
   }
 
   .light__dark__mode--switch--sun.visible {
 	opacity: 1;
-	transition: all 0.2s ease-in 0.4s;
 	z-index: 1;
   }
 
   .light__dark__mode--switch--moon.visible {
 	opacity: 1;
-	transition: all 0.2s ease-in 0.4s;
 	z-index: 1;
   }
 
