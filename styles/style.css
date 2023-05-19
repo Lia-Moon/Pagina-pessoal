@@ -38,7 +38,7 @@ body {
 	margin: 2% 0;
 	letter-spacing: -2.2px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr;
 	align-items: center;
 }
 
@@ -76,11 +76,11 @@ body {
 	color: var(--cor-fonte-dark-mode);
 }
 
-.logo-nav-nome--span {
+.light__dark__mode .logo-nav-nome span {
 	color: var(--cor-primaria);
 }
 
-.logo-nav-nome--span:hover {
+.light__dark__mode .logo-nav-nome span:hover {
 	color: var(--cor-fonte-dark-mode);
 }
 
@@ -88,10 +88,6 @@ body {
 	position: relative;
 	height: fit-content;
 	place-self: center;
-}
-
-.light__dark__mode--button {
-	width: auto;
 }
 
 /* The switch - the box around the slider */
@@ -627,11 +623,12 @@ footer {
 
 	.cabecalho__ {
 		justify-content: center;
-		gap: 20px;
+		gap: 0px;
+		margin: 50px auto;
 	}
 
 	.navegacao__paginas ul {
-		gap: 20px;
+		gap: 15px;
 	}
 
 	.navegacao__paginas a:hover {
