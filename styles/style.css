@@ -131,11 +131,11 @@ body {
   }
   
   input:checked + .botoes__dark__lang--switch--slider {
-	background-color: #2196F3;
+	background-color: var(--cor-primaria);
   }
   
   input:focus + .botoes__dark__lang--switch--slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px var(--cor-primaria);
   }
   
   input:checked + .botoes__dark__lang--switch--slider:before {
