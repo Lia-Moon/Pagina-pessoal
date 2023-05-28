@@ -22,7 +22,7 @@
 	<body>
 		<header>
 			<div class="cabecalho__">
-				<div class="logo-nav-nome">
+				<div class="logo-nav-nome" id="id__logo-nav-nome">
 					<span>J</span>
 					<span>ú</span>
 					<span>l</span>
@@ -37,14 +37,36 @@
 					<span>a</span>
 					<h1><strong>Software Engineer student</strong></h1>
 				</div>
-				
+	
 				<div class="navegacao">
+					<div class="botoes__dark__lang">
+						<div class="light__dark__mode--switch">
+							<a href="#" class="light__dark__mode--switch--sun visible"><i class="fa-solid fa-sun"></i></a>
+							<label class="botoes__dark__lang--switch">
+								<input type="checkbox" onclick="myFunction()">
+								<span class="botoes__dark__lang--switch--slider"></span>
+							</label>							
+							<a href="#" class="light__dark__mode--switch--moon"><i class="fa-solid fa-moon"></i></a>
+						</div>					
+						<div class="language__switch">
+							<label class="botoes__dark__lang--switch">
+								<input type="checkbox" onclick="">
+								<span class="botoes__dark__lang--switch--slider"></span>
+							</label>
+						</div>
+					</div>
 					<nav class="navegacao__paginas">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html">About</a></li>
-							<li><a href="portifolio.html">Portfolio</a></li>
-							<li><a href="contato.html">Contact</a></li>
+							<li><a href="aboutme.html">About me</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<div class="navegacao__paginas__resume">
+								<li class="navegacao__paginas__resume--texto"><a>Résumé</a></li>
+								<div class="navegacao__paginas__resume--curriculos">
+									<a href="https://docs.google.com/document/d/1062geYpJlO7SgPydO34UEg3qyEFVaY3zfojAlk4ez64/edit?usp=sharing" target="_blank">English</a>
+									<a href="https://docs.google.com/document/d/1fcUabZImh8mDxBDjCs0z0YtfBANnWcuGHP3u7LHGAOw/edit?usp=sharing" target="_blank">Português</a>
+								</div>
+							</div>
 						</ul>
 					</nav>
 					<div class="navegacao__redes_sociais">
