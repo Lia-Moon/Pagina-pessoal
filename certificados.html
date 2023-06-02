@@ -3,14 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-
-		<title>Júlia Vieira - Certificados</title>
+	
+		<title>Júlia Vieira</title>
 		<link rel="icon" type="image/x-icon" href="./assets/newfavicon.ico">
-
+	
 		<link rel="stylesheet" href="./styles/reset.css">
 		<link rel="stylesheet" href="./styles/style.css">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://code.jquery.com/jquery-3.7.0.js"
+			integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -29,7 +33,8 @@
 					<span>i</span>
 					<span>r</span>
 					<span>a</span>
-					<h1><strong>Software Engineer student</strong></h1>
+					<h1 lang="en"><strong>Software Engineer student</strong></h1>
+					<h1 lang="pt"><strong>Estudante de Engenharia de Software</strong></h1>
 				</div>
 	
 				<div class="navegacao">
@@ -38,27 +43,39 @@
 							<a href="#" class="light__dark__mode--switch--sun visible"><i class="fa-solid fa-sun"></i></a>
 							<label class="botoes__dark__lang--switch">
 								<input type="checkbox" onclick="myFunction()">
-								<span class="botoes__dark__lang--switch--slider"></span>
-							</label>							
+								<span class="botoes__dark__lang--switch--slider light__dark"></span>
+							</label>
 							<a href="#" class="light__dark__mode--switch--moon"><i class="fa-solid fa-moon"></i></a>
-						</div>					
+						</div>
 						<div class="language__switch">
-							<label class="botoes__dark__lang--switch">
-								<input type="checkbox" onclick="">
-								<span class="botoes__dark__lang--switch--slider"></span>
+							<label class="botoes__dark__lang--switch language">
+								<p class="language__switch__option portuguese visible">Br</p>
+								<input id="lang-switch" type="checkbox" value="en" onclick="selectText(this.value)">
+								<span class="botoes__dark__lang--switch--slider language"></span>
+								<p class="language__switch__option english">En</p>
 							</label>
 						</div>
 					</div>
 					<nav class="navegacao__paginas">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutme.html">About me</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="index.html" lang="en">Home</a></li>
+							<li><a href="index.html" lang="pt">Início</a></li>
+							<li><a href="aboutme.html" lang="en">About me</a></li>
+							<li><a href="aboutme.html" lang="pt">Sobre</a></li>
+							<li><a href="portfolio.html" lang="en">Portfolio</a></li>
+							<li><a href="portfolio.html" lang="pt">Portfólio</a></li>
 							<div class="navegacao__paginas__resume">
-								<li class="navegacao__paginas__resume--texto"><a>Résumé</a></li>
+								<li class="navegacao__paginas__resume--texto" lang="en"><a>Résumé</a></li>
+								<li class="navegacao__paginas__resume--texto" lang="pt"><a>Currículo</a></li>
 								<div class="navegacao__paginas__resume--curriculos">
-									<a href="https://docs.google.com/document/d/1062geYpJlO7SgPydO34UEg3qyEFVaY3zfojAlk4ez64/edit?usp=sharing" target="_blank">English</a>
-									<a href="https://docs.google.com/document/d/1fcUabZImh8mDxBDjCs0z0YtfBANnWcuGHP3u7LHGAOw/edit?usp=sharing" target="_blank">Português</a>
+									<a href="https://docs.google.com/document/d/1062geYpJlO7SgPydO34UEg3qyEFVaY3zfojAlk4ez64/edit?usp=sharing"
+										target="_blank" lang="en">English</a>
+									<a href="https://docs.google.com/document/d/1fcUabZImh8mDxBDjCs0z0YtfBANnWcuGHP3u7LHGAOw/edit?usp=sharing"
+										target="_blank" lang="pt">Inglês</a>
+									<a href="https://docs.google.com/document/d/1062geYpJlO7SgPydO34UEg3qyEFVaY3zfojAlk4ez64/edit?usp=sharing"
+										target="_blank" lang="en">Portuguese</a>
+									<a href="https://docs.google.com/document/d/1fcUabZImh8mDxBDjCs0z0YtfBANnWcuGHP3u7LHGAOw/edit?usp=sharing"
+										target="_blank" lang="pt">Português</a>
 								</div>
 							</div>
 						</ul>

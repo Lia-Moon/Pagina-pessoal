@@ -478,6 +478,87 @@ footer {
 	color: #F4F4F4;
 }
 
+/* Página sobre mim ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* display: flex;
+	align-items: center;
+	gap: 5%;
+	width: 76%;
+	margin: 2% auto;
+}
+
+.main-descricao-foto strong {
+	font-weight: bold;
+}
+
+.main-descricao-foto em {
+	font-style: italic;
+}
+
+.main-descricao-foto-texto {
+	font-size: 1.12rem;
+	max-width: 450px;
+}
+
+.main-descricao-foto-texto p {
+	padding-bottom: 0.7em;
+}
+
+.introducao-sobre {
+	text-align: justify;
+	line-height: 1.2em;
+
+
+	width: 50%;
+	border-radius: 50px;
+	float: right;
+	box-shadow: 4px 4px 25px 0 #28282A;
+	max-width: 500px;
+}
+
+.main-descricao-foto {
+	display: flex;
+	align-items: center;
+	gap: 5%;
+	width: 76%;
+	margin: 2% auto;
+	 */
+
+.main__aboutme__text--foto {
+	align-items: center;
+	gap: 5%;
+	width: 76%;
+	margin: 5% auto;
+	max-width: 70%;
+}
+
+.main__aboutme__text p {
+	padding-bottom: 0.7rem;
+	text-indent: 50px;
+	text-align: justify;
+	font-size: 1.12rem;
+	line-height: 1.2em;
+}
+
+.main__aboutme__text strong {
+	font-weight: bold;
+}
+
+.main__aboutme__text--first--line {
+	font-weight: bold;
+	font-size: 2rem;
+	font-family: var(--fonte-terciaria);
+}
+
+.main__aboutme__foto {
+	margin: 0px 0px 25px 25px;
+	width: 200px;
+	border-radius: 50px;
+	float: right;
+	box-shadow: 4px 4px 25px 0 #28282A;
+	max-width: 500px;
+}
+
 /* Extra small devices (phones, 600px and down) -----------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 600px) and (max-width: 600px) {
 	.cabecalho__ {
