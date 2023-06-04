@@ -65,6 +65,8 @@ body {
 	letter-spacing: 0px;
 }
 
+/* Botões páginas ---------------------------------------------------------------------------------------------------------------------- */
+
 .botoes__dark__lang {
 	display: flex;
 	justify-content: center;
@@ -158,34 +160,31 @@ input:checked + .botoes__dark__lang--switch--slider:before {
 	border-radius: 50%;
 }
 
-.light__dark__mode--switch--sun {
+.light__dark__mode__switch__option {
 	opacity: 0.2;
 	transition: all 0.5s ease-in 0.4s;
 	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+	color: var(--cor-primaria);
+}
+
+.light__dark__mode__switch__option.sun {
 	top: 9.4px;
 	left: 8px;
-	z-index: 1;
-	pointer-events: none;
-	color: var(--cor-primaria);
 }
 
-.light__dark__mode--switch--moon {
-	opacity: 0.2;
-	transition: all 0.5s ease-in 0.4s;
-	position: absolute;
+.light__dark__mode__switch__option.moon {
 	top: 9.4px;
 	right: 14px;
-	z-index: 1;
-	pointer-events: none;
-	color: var(--cor-primaria);
 }
 
-.light__dark__mode--switch--sun.visible {
+.light__dark__mode__switch__option.sun.visible {
 	opacity: 1;
 	z-index: 1;
 }
 
-.light__dark__mode--switch--moon.visible {
+.light__dark__mode__switch__option.moon.visible {
 	opacity: 1;
 	z-index: 1;
 }
@@ -220,6 +219,8 @@ input:checked + .botoes__dark__lang--switch--slider:before {
 	opacity: 1;
 	z-index: 1;
 }
+
+/* Navegação links páginas --------------------------------------------------------------------------------------------------------------- */
 
 .navegacao {
 	align-self: center;
@@ -479,50 +480,6 @@ footer {
 }
 
 /* Página sobre mim ----------------------------------------------------------------------------------------------------------------------------- */
-
-/* display: flex;
-	align-items: center;
-	gap: 5%;
-	width: 76%;
-	margin: 2% auto;
-}
-
-.main-descricao-foto strong {
-	font-weight: bold;
-}
-
-.main-descricao-foto em {
-	font-style: italic;
-}
-
-.main-descricao-foto-texto {
-	font-size: 1.12rem;
-	max-width: 450px;
-}
-
-.main-descricao-foto-texto p {
-	padding-bottom: 0.7em;
-}
-
-.introducao-sobre {
-	text-align: justify;
-	line-height: 1.2em;
-
-
-	width: 50%;
-	border-radius: 50px;
-	float: right;
-	box-shadow: 4px 4px 25px 0 #28282A;
-	max-width: 500px;
-}
-
-.main-descricao-foto {
-	display: flex;
-	align-items: center;
-	gap: 5%;
-	width: 76%;
-	margin: 2% auto;
-	 */
 
 .main__aboutme__text--foto {
 	align-items: center;
