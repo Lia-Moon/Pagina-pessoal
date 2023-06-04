@@ -616,6 +616,10 @@ footer {
 		margin: 10px auto;
 		grid-template-columns: 1fr;
 	}
+
+	.main__aboutme__foto {
+		width: 150px;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) ----------------------------------------------------------------------*/
