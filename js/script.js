@@ -53,14 +53,17 @@ function selectText() {
     case 'en':
       $('[lang]').hide();
       $('[lang="en"]').show();
+      $('[lang="pt"]').hide();
       break;
     case 'pt':
       $('[lang]').hide();
+      $('[lang="en"]').hide();
       $('[lang="pt"]').show();
       break;
     default:
       $('[lang]').hide();
       $('[lang="en"]').show();
+      $('[lang="pt"]').hide();
   }
 
   //Salva seleção no localStorage
@@ -72,11 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   //Verifica se existe seleção anterior ao carregar a página
   var selectedLanguage = localStorage.getItem('selectedLanguage');
+  
   if(selectedLanguage) {
-    toggleLanguageSwitch.checked = selectedLanguage === 'en';
-    // Disparar o evento para definir o estado inicial do idioma
-    selectText();
+    toggleLanguageSwitch.checked = selectedLanguage === 'en';    
+  } else {
+    selectedLanguage = toggleLanguageSwitch.checked ? 'en' : 'pt';
+    localStorage.setItem('selectedLanguage', selectedLanguage);
   }
+
+  // Disparar o evento para definir o estado inicial do idioma
+  selectText();
 });
 
 // Definir qual ícone fica visível
