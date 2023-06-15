@@ -272,7 +272,7 @@ input:checked + .botoes__dark__lang--switch--slider:before {
 	font-size: 1rem;
 	font-family: var(--fonte-primaria);
 	padding: 10px 5px 10px 5px;
-	min-width: 84px;
+	min-width: 100px;
 	border: 2px solid #e6e2e2;
 }
 
